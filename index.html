@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khula&family=Satisfy&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Khula', sans-serif;
+            font-size: 22px;
+            color: #58585a;
+            background-image: url('bg2.jpg');
+            background-color: #f8f8f8;
+            background-size: contain;
+            background-position-y: -80px;
+            background-position-x: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 700px;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 100px auto 0;
+        }
+
+        .introduction {
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: 0;
+            padding: 0 30px;
+        }
+
+        .introduction.big {
+            font-size: 24px;
+        }
+
+        .username {
+            font-family: 'Satisfy', cursive;
+        }
+
+        .date {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .date-mn {
+            font-size: 16px;
+        }
+
+        .date-middle {
+            display: flex;
+            gap: 20px;
+            text-transform: uppercase;
+            width: 100%;
+            align-items: center;
+        }
+
+        .date-mn {
+            text-transform: uppercase;
+        }
+
+        .date-exact {}
+
+        .date-week {
+            font-size: 21px;
+            text-align: right;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 8px 0 4px 28px;
+            flex: 1;
+            width: 130px;
+        }
+
+        .date-day {
+            font-size: 36px;
+            line-height: 1;
+            padding: 0 10px;
+        }
+
+        .date-time {
+            font-size: 21px;
+            text-align: left;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 7px 0;
+            padding: 8px 28px 4px 0;
+            flex: 1;
+            width: 130px;
+        }
+
+        @media screen and (max-width: 760px) {
+            body {
+                background-size: cover;
+                font-size: 17px;
+            }
+
+            .introduction.big {
+                font-size: 19px;
+            }
+
+            .date-mn {
+                font-size: 15px;
+            }
+
+            .date-week {
+                font-size: 20px;
+                padding: 8px 0 4px 10px;
+                flex: 1;
+                width: 110px;
+            }
+
+            .date-time {
+                font-size: 20px;
+                padding: 8px 10px 4px 0;
+                flex: 1;
+                width: 110px;
+            }
+
+            .date-day {
+                font-size: 33px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <p class="introduction">Dear </p>
+
+        <h1 class="username">Sevnar Aghajanyan</h1>
+
+        <p class="introduction">You've been invited to your colleague's pre-wedding planning.</p>
+
+        <div class="date">
+            <span class="date-mn">Dectember</span>
+            <div class="date-middle">
+                <div class="date-week">saturday</div>
+                <div class="date-day">03</div>
+                <div class="date-time">at 3 pm</div>
+            </div>
+            <span class="date-mn">2022</span>
+        </div>
+
+        <p class="introduction big">Our driver will be waiting for you near your bank in Abovyan.</p>
+
+    </div>
+
+</body>
+
+</html>
